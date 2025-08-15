@@ -1,5 +1,5 @@
 import matplotlib
-matplotlib.use('TkAgg')  # GUI backen
+matplotlib.use('TkAgg')  # GUI backend
 
 import argparse
 import numpy as np
