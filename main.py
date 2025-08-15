@@ -1,5 +1,5 @@
 import matplotlib
-matplotlib.use('TkAgg')  # Ensure GUI backend with interactivity
+matplotlib.use('TkAgg')  # GUI backen
 
 import argparse
 import numpy as np
@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 from matplotlib.widgets import Button
 
 def monte_carlo_pi_animation(num_samples: int, batch_size: int = None):
-    # Batch size logic fixed as you requested:
+    # Batch size logic
     if batch_size is None:
         if num_samples <= 1_000_000:
             batch_size = 10_000
