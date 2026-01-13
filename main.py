@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 from matplotlib.widgets import Button
 
 def monte_carlo_pi_animation(num_samples: int, batch_size: int = None):
-    # Batch size logic fixed as you requested:
+    # Batch size logic
     if batch_size is None:
         if num_samples <= 1_000_000:
             batch_size = 10_000
@@ -34,6 +34,8 @@ def monte_carlo_pi_animation(num_samples: int, batch_size: int = None):
 
     # Initially hide axes spines, ticks, labels and grid:
     ax.set_visible(False)
+    ax.set_yticklabels([])
+    ax.set_xticklabels([])
 
     circle = plt.Circle((0, 0), 1, edgecolor='red', facecolor='none', linewidth=2)
     ax.add_patch(circle)
