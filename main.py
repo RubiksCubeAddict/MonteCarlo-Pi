@@ -1,5 +1,5 @@
 import matplotlib
-matplotlib.use('TkAgg')  # Ensure GUI backend with interactivity
+matplotlib.use('TkAgg')  # GUI backend
 
 import argparse
 import numpy as np
